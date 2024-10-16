@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: floralwhite;
+}
+
+.container1 marquee{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container1{
+    height: 35px;
+    width: 100%;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    animation-name: movingtext;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes movingtext{
+    0%{
+        background-color: darkturquoise;
+        color:black;
+    }
+    30%{
+        background-color: yellowgreen;
+        color:black;
+    }
+    65%{
+        background-color: yellow;
+        color:black;
+    }
+    85%{
+        background-color: orange;
+        color:black;
+    }
+    100%{
+        background-color: darkturquoise;
+        color:black;
+    }
+}
+
+.container2 a{
+    text-decoration: none;
+}
+
+.container2{
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container2 .font{
+    padding-left: 480px;
+}
+
+.navbar{
+    position: sticky;
+}
+
+nav .container-fluid a span{
+    font-family: monospace;
+    font-size: 30px;
+}
+
+nav .collapse{
+    padding-left: 250px;
+}
+
+nav .container-fluid .nav-link:hover{
+    color: orange;
+}
+
+
+nav .container-fluid button{
+    font-family: serif;
+    color: white;
+    background-color: orange;
+}
+
+
+nav .container-fluid button:hover{
+    background-color: blue;
+    color: white;
+}
+
+#carouselExampleCaptions h5{
+    font-size: 35px;
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 15px black;
+}
+
+#carouselExampleCaptions p{
+    font-size: 20px;
+    padding-bottom: 230px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.for{
+    margin-left: 400px;
+}
+
+.for .card .card-body select{
+    border-radius: 100px;
+
+}
+
+
+.for .card .card-header{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.for .card .card-body input[type=date]{
+    border-radius: 100px;
+    padding: 10px;
+    width: 250px;
+    position: relative;
+}
+
+.for .card .card-body #from2{
+    width: 280px;
+    position: absolute;
+    left: 330px;
+    bottom: 210px;
+}
+
+.for .card .card-body #lab{
+    padding-left: 210px;
+}
+
+.for .card .card-body #from4{
+    border-radius: 100px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.for .card .card-body #from5{
+    border-radius: 100px;
+    padding: 10px;
+    width: 275px;
+    text-align: center;
+}
+
+.for .card .card-body #lab1{
+    margin-left: 250px;
+}
+
+.for .card .card-body #butt{
+    width: 570px;
+    background-color: orange;
+    border-radius: 100px;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.for .card .card-body #butt:hover{
+    background-color: blue;
+    color: white;
+}
+
+.img{
+    background-image: url("D:/Gqt Projects/sanjo/Travel Website/images/log.jpg");
+    height: 800px;
+    
+}
+
+.best h1{
+    padding: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+
+.best h1 button{
+    margin-left: 700px;
+    border-radius: 100px;
+    padding: 15px;
+    font-family: serif;
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+}
+
+.servicebg{
+    background-color: white;
+    padding: 20PX 0PX 30PX 0PX;
+}
+
+.servicebg h1{
+    margin-left: 630px;
+}
+
+.servicebg .service .card{
+    background-color: whitesmoke;
+}
+
+.servicebg .service .card span{
+    padding: 50px 0px 0px 40px;
+}
+
+.servicebg .service .card h5{
+    padding: 10px 0px 0px 20px;
+}
+
+.servicebg .service .card p{
+    padding: 30px 20px 100px 20px;
+    color: gray;
+}
+
+.servicebg .service .card:hover{
+    box-shadow: 0px 0px 10px black;
+    transition: .5s;
+    background-color: white;
+}
+
+.map iframe{
+    margin-left: 450px;
+}
+
+footer .col .sl{
+    padding: 20px 0px 0px 0px;
+}
