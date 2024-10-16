@@ -1,0 +1,390 @@
+
+*
+ {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: white;
+  background-color: darkcyan;
+}
+
+.btn-primary:hover {
+  background-color: darkgreen;
+  transition: 0.5s ;
+}
+
+/*navbar*/   
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: white;
+  color: black;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 24px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu-items a:hover {
+  color: darkgreen;
+  transition:0.3s;
+}
+
+.logo {
+  order: 1;
+  font-size: 33px;
+  margin-bottom: 12px;
+}
+
+/* Showcase */
+
+.showcase-area {
+  height: 390px;
+  background: linear-gradient(
+      rgba(240, 240, 240, .1),
+      rgba(255, 255, 255, .3)
+    ),
+  url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 26px;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 29px;
+}
+
+/* about us */
+
+#about {
+  padding: 50px 0px;
+  background-color: ghostwhite;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 37px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: dimgray;
+}
+
+#about .small {
+  font-size: 19px;
+  color: dimgray;
+  font-weight: 600;
+}
+
+.about-img {
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img 1s forwards;
+}
+
+@keyframes about-img {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text 1s forwards;
+}
+
+@keyframes about-text {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Food category */
+
+#food {
+  padding: 80px 0 160px 0;
+}
+
+#food h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: dimgray;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-height: 300px;
+}
+
+.img-container {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.img-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 1s;
+}
+
+.img-content h3 {
+  color: white;
+  font-size: 35px;
+}
+
+.img-content a {
+  font-size: 19px;
+}
+
+.img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.871);
+  opacity: 0;
+  z-index: 1;
+
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.img-container:hover .img-content {
+  opacity: 1;
+  top: 40%;
+}
+
+/* Food Menu */
+
+.food-menu-heading {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 400;
+  color: gray;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+ 
+}
+
+.food-menu-item {
+  display: flex;
+  flex:600px;
+  justify-content: space-evenly;
+  margin-bottom: 48px;
+}
+
+.food-description {
+  margin: auto 24px;
+}
+
+.font-title {
+  font-size: 29px;
+  font-weight: 400;
+  color: #444;
+}
+
+.food-description p {
+  font-size: 22px;
+  color: #555;
+  font-weight: 500;
+}
+
+.food-description .food-price {
+  color: seagreen;
+  font-weight: 700;
+}
+
+/* Contact Us */
+
+#contact {
+  padding: 80px 0px;
+  background-color: #aaa;
+}
+
+.contact-container {
+  display: flex;
+  background-color: white;
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact-img img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.form-container {
+  padding: 16px;
+  width: 50%;
+  margin: auto;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid darkgray;
+  padding: 16px 0;
+  box-shadow: none;
+  margin-bottom: 16px;
+  color: gray;
+  font-weight: 500;
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid darkgray;
+  color: gray;
+  outline: none;
+  padding: 16px 0;
+  resize: none;
+}
+
+.form-container h2 {
+  font-size: 43px;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 16px;
+  margin-top: -19px;
+}
+
+.form-container a {
+  font-size: 21px;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 29px;
+  padding: 42px;
+  font-weight: 500;
+  color: white;
+  background-color: dimgrey;
+}

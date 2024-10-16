@@ -1,0 +1,26 @@
+.container .row .btn:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+    width: 130px;
+    height: 40px;
+    transition: .3s;
+}
+
+.container .row .col .card-text:hover {
+    color: red;
+    font-weight: bold;
+}
+
+#skills .row li:hover{
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#contact .contact-form .btn:hover {
+    background-color: blue;
+    color: white;  }
+
+
